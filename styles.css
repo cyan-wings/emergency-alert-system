@@ -1,0 +1,135 @@
+h1 {
+    font-size: 400%;
+}
+
+h2   {
+    display: inline;
+    font-size: 200%;
+}
+
+p   {
+    display: inline;
+    font-size: 200%;
+}
+
+h3  {
+    font-size: 350%;
+    color: black;
+}
+
+h4  {
+    font-size: 550%;
+    color: red;
+}
+
+div   {
+    height: 200px; 
+    width: 100%; 
+    position: relative;  
+    top: auto;
+    left: auto;
+    right: auto;
+    text-align: center; 
+    
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    width: 200px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+input[type=submit] {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    width: 300px;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+input[type=number] {
+    font-size: 25px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto; /* 1% from the top and centered */
+  padding: 10px;
+  border: 10px solid black;
+  width: 80%; 
+  height: 550px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ fieldset {
+    border:2px solid black;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+    display: inline;
+} 
+
+legend {
+    margin-bottom:0px;
+    margin-left:16px;
+    font-size: 20px;
+} 

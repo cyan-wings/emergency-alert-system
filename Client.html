@@ -1,0 +1,66 @@
+<html>
+    <head>
+    <title>Response Team</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div>
+        <h1>Response Team Interface</h1>
+
+        <section>
+        <h2>Emergency Status:</h2>
+        <p id="status">No Emergency</p><br>
+        <h2>Status of Safe:</h2>
+        <p id = "safe">Unlocked</p><br>
+        <h2>Status of Alarm:</h2>
+        <p id = "alarm">Disabled</p><br><br>
+        </section>
+        
+        <fieldset>
+            <legend>Safe:</legend>
+        <button onClick="lockSafe()">Lock Safe</button>
+        <button onClick="unlockSafe()">Unlock Safe</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reset:</legend>
+        <button onClick="resetStatus()">Reset Status</button> 
+        </fieldset>
+        
+        <fieldset>
+            <legend>Calls:</legend>
+        <button onClick="callPolice()">Call Police</button>
+        <button onClick="callFirefighter()">Call Firefighter</button>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Alarm:</legend>
+        <button onClick="enableAlarm()">Enable Alarm</button>
+        <button onClick="disableAlarm()">Disable Alarm</button>
+        <br>
+        <font size="5">Enter duration of alarm (between 1 and 86400 seconds):</font>
+        <input id = "textbox" type="number" name="duration" min="1" max="86400">
+        <input type = "submit" value = "Enable Alarm With Duration" onClick = "enableAlarmDuration()"> 
+        <br><br>
+        <font size="3">[1 minute = 60 seconds, 1 hour = 3600 seconds, 24 hours = 86400 seconds]</font>
+        </fieldset>
+
+        </div>
+
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>EMERGENCY: STATUS UPDATE</h3>
+            <h4 id = "modal_status">No Status</h4>
+        </div>
+
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+        <script src="Client.js"></script>
+    </body>
+</html>
